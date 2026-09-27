@@ -1,0 +1,194 @@
+[
+  {
+    "procedure_id": "EXP-2026-001",
+    "procedure_name": "Microgravity Biological Culture & Assay Protocol",
+    "version": "v2.4-ISRO",
+    "module": "BAS Payload Rack Alpha-1",
+    "steps": [
+      {
+        "step_id": "EXP-001-STEP-1",
+        "action": "flight_documentation",
+        "step_name": "Flight Documentation & Checklist Initialization",
+        "expected_duration": 25.0,
+        "description": "Verify experiment parameters and baseline checklist.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-001-STEP-2",
+        "action": "sensor_calibration",
+        "step_name": "Optical & Thermal Sensor Calibration",
+        "expected_duration": 30.0,
+        "description": "Zero incubator temperature and spectrometer photodetectors.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-001-STEP-3",
+        "action": "sample_collection",
+        "step_name": "Cell Specimen Extraction",
+        "expected_duration": 45.0,
+        "description": "Safely extract biological sample from micro-locker storage.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-001-STEP-4",
+        "action": "reagent_mixing",
+        "step_name": "Buffer & Reagent Fluidic Preparation",
+        "expected_duration": 40.0,
+        "description": "Titrate buffering solution and transfer with pipette.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-001-STEP-5",
+        "action": "petri_dish_inoculation",
+        "step_name": "Agar Plate Culture Inoculation",
+        "expected_duration": 45.0,
+        "description": "Inoculate bio-substrate in positive airflow glovebox.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-001-STEP-6",
+        "action": "cryo_sample_storage",
+        "step_name": "Cryogenic Preservation & Stowage",
+        "expected_duration": 30.0,
+        "description": "Seal sample container and transfer to -80C cold stowage.",
+        "safe_alternatives": []
+      }
+    ]
+  },
+  {
+    "procedure_id": "EXP-2026-002",
+    "procedure_name": "ECLSS Environmental Loop Maintenance",
+    "version": "v2.1-ISRO",
+    "module": "BAS Habitation Module Bravo",
+    "steps": [
+      {
+        "step_id": "EXP-002-STEP-1",
+        "action": "flight_documentation",
+        "step_name": "Maintenance Work Order Review",
+        "expected_duration": 20.0,
+        "description": "Confirm lock-out tag-out authorization on mission tablet.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-002-STEP-2",
+        "action": "avionics_module_check",
+        "step_name": "Bus Voltage & Telemetry Verification",
+        "expected_duration": 35.0,
+        "description": "Check telemetry bus signals prior to servicing.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-002-STEP-3",
+        "action": "coolant_valve_actuation",
+        "step_name": "Coolant Flow Bypass Valve Actuation",
+        "expected_duration": 25.0,
+        "description": "Divert thermal fluid loop via three-way valve.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-002-STEP-4",
+        "action": "hepa_filter_replacement",
+        "step_name": "Cabin Loop Particulate Filter Replacement",
+        "expected_duration": 45.0,
+        "description": "Remove saturated filter cartridge and insert fresh HEPA element.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-002-STEP-5",
+        "action": "pressure_panel_latching",
+        "step_name": "Access Panel Sealing & Torque Lock",
+        "expected_duration": 30.0,
+        "description": "Latch panel fasteners to specified sealing torque.",
+        "safe_alternatives": []
+      }
+    ]
+  },
+  {
+    "procedure_id": "EXP-2026-003",
+    "procedure_name": "Airlock EVA Egress & Tether Protocol",
+    "version": "v1.8-ISRO",
+    "module": "BAS Airlock & Docking Hub",
+    "steps": [
+      {
+        "step_id": "EXP-003-STEP-1",
+        "action": "flight_documentation",
+        "step_name": "Depressurization Log Confirmation",
+        "expected_duration": 20.0,
+        "description": "Record pre-breathe parameters.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-003-STEP-2",
+        "action": "eva_suit_preparation",
+        "step_name": "Spacesuit Pressure & Umbilical Check",
+        "expected_duration": 60.0,
+        "description": "Verify suit integrity and bio-telemetry link.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-003-STEP-3",
+        "action": "safety_tether_inspection",
+        "step_name": "Dual Safety Tether Hook Inspection",
+        "expected_duration": 25.0,
+        "description": "Inspect carabiner snap-hooks and safety cables.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-003-STEP-4",
+        "action": "foot_restraint_locking",
+        "step_name": "Workstation Foot Restraint Engagement",
+        "expected_duration": 25.0,
+        "description": "Anchor magnetic/mechanical boots into restraint socket.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EXP-003-STEP-5",
+        "action": "airlock_ingress_egress",
+        "step_name": "Airlock Bulkhead Ingress/Egress",
+        "expected_duration": 35.0,
+        "description": "Traverse hatch threshold with continuous tether lock.",
+        "safe_alternatives": []
+      }
+    ]
+  },
+  {
+    "procedure_id": "EMERGENCY_PROTOCOL_001",
+    "procedure_name": "Rapid Cabin Decompression / Fire Protocol",
+    "version": "v3.0-CRITICAL",
+    "module": "BAS Universal Station Alert",
+    "steps": [
+      {
+        "step_id": "EMG-001-STEP-1",
+        "action": "rapid_o2_mask_donning",
+        "step_name": "Portable Breathing Apparatus Donning",
+        "expected_duration": 15.0,
+        "description": "Immediately don oxygen mask and initiate positive flow.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EMG-001-STEP-2",
+        "action": "hatch_seal_integrity_check",
+        "step_name": "Bulkhead Pressure Seal Verification",
+        "expected_duration": 25.0,
+        "description": "Locate pressure drop and inspect perimeter hatch seals.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EMG-001-STEP-3",
+        "action": "fire_suppression_drill",
+        "step_name": "Suppressant Injection to Affected Bay",
+        "expected_duration": 30.0,
+        "description": "Discharge extinguishing agent through fire port.",
+        "safe_alternatives": []
+      },
+      {
+        "step_id": "EMG-001-STEP-4",
+        "action": "emergency_system_troubleshooting",
+        "step_name": "Master Caution & Warning Bus Triage",
+        "expected_duration": 35.0,
+        "description": "Isolate malfunctioning subsystem from main DC bus.",
+        "safe_alternatives": []
+      }
+    ]
+  }
+]
