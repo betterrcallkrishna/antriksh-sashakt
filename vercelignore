@@ -1,0 +1,8 @@
+backend/
+data/
+Dockerfile
+requirements.txt
+docker-compose.yml
+.env
+.env.local
+pyproject.toml
