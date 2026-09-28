@@ -1,0 +1,38 @@
+ANTRIKSH FRONTEND - FILE COPY CHECKLIST
+=====================================
+
+Copy each file FROM (left) TO (right) in your sashakt-frontend folder:
+
+LIB (1 file)
+============
+[  ] lib-api.ts                    → lib/api.ts
+
+COMPONENTS (5 files)
+====================
+[  ] components-Header.tsx         → components/Header.tsx
+[  ] components-Navigation.tsx     → components/Navigation.tsx
+[  ] components-StatusBadge.tsx    → components/StatusBadge.tsx
+[  ] components-StatsDashboard.tsx → components/StatsDashboard.tsx
+[  ] components-ActivityFeed.tsx   → components/ActivityFeed.tsx
+
+APP - PAGES (6 files)
+=====================
+[  ] layout-root.tsx               → app/layout.tsx (REPLACE existing)
+[  ] page-dashboard.tsx            → app/page.tsx (REPLACE existing)
+[  ] page-procedures.tsx           → app/procedures/page.tsx (NEW)
+[  ] page-procedure-detail.tsx     → app/procedures/[id]/page.tsx (NEW)
+[  ] page-telemetry.tsx            → app/telemetry/page.tsx (NEW)
+[  ] page-settings.tsx             → app/settings/page.tsx (NEW)
+
+DEPLOYMENT INSTRUCTIONS
+=======================
+1. Create any missing folders (components/, lib/, app/procedures/[id]/, etc.)
+2. Copy all files to their destinations above
+3. Test locally: npm run dev
+4. Commit: git add . && git commit -m "Add complete ANTRIKSH dashboard"
+5. Push: git push origin main
+6. Vercel will auto-deploy to https://antriksh-sashakt.vercel.app
+
+TOTAL FILES: 12 new/updated files
+DEPLOYMENT TIME: ~2 minutes
+STATUS: Ready to deploy! 🚀
